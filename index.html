@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07152c">
+<title>Koshary El Basha Talmeez | كشري الباشا تلميذ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="home-body">
+<main class="poster-wrap">
+  <div class="poster-stage">
+    <img class="poster home-poster" src="invitation-home.jpg" alt="دعوة كشري الباشا تلميذ">
+    <!-- Transparent hotspots sit over the three designed buttons in the original artwork -->
+    <button class="poster-hotspot hotspot-order" aria-label="اطلب أوردر" data-action="order"></button>
+    <a class="poster-hotspot hotspot-menu" href="menu.html" aria-label="افتح المنيو"></a>
+    <button class="poster-hotspot hotspot-offers" aria-label="عروض اليوم" data-action="offers"></button>
+
+    <!-- Animated chili bottle: playful accent, kept clear of the main title -->
+    <div class="chili-scene" aria-hidden="true">
+      <svg class="chili-bottle" viewBox="0 0 120 190" role="img">
+        <defs>
+          <linearGradient id="glass" x1="0" x2="1">
+            <stop offset="0" stop-color="#a51d16"/><stop offset=".45" stop-color="#ef4b21"/><stop offset="1" stop-color="#7b1011"/>
+          </linearGradient>
+          <linearGradient id="cap" x1="0" x2="1">
+            <stop offset="0" stop-color="#d5a23a"/><stop offset=".5" stop-color="#ffe18a"/><stop offset="1" stop-color="#9b6819"/>
+          </linearGradient>
+        </defs>
+        <path d="M44 25 L44 12 Q44 7 50 7 L71 7 Q77 7 77 12 L77 25 L84 35 Q91 43 91 54 L91 153 Q91 169 76 172 L40 172 Q25 169 25 153 L25 54 Q25 43 32 35 Z" fill="url(#glass)" stroke="#ffd778" stroke-width="3"/>
+        <rect x="42" y="2" width="38" height="22" rx="4" fill="url(#cap)" stroke="#5b3510" stroke-width="2"/>
+        <path d="M36 55 Q58 44 80 55 L80 145 Q58 157 36 145 Z" fill="#f25a22" opacity=".65"/>
+        <path d="M42 40 Q33 55 36 72" fill="none" stroke="#ffd8a0" stroke-width="5" stroke-linecap="round" opacity=".75"/>
+        <path d="M42 91 Q58 82 75 91" fill="none" stroke="#ffb55d" stroke-width="3" opacity=".7"/>
+        <path d="M48 104 L68 104 L64 123 L52 123 Z" fill="#fff1bd" stroke="#6d2010" stroke-width="2"/>
+        <text x="58" y="116" text-anchor="middle" font-size="10" font-weight="bold" fill="#922014">شطة</text>
+      </svg>
+      <span class="chili-drop drop-one"></span><span class="chili-drop drop-two"></span><span class="chili-drop drop-three"></span>
+      <span class="chili-caption">شطة على أصولها!</span>
+    </div>
+    <div class="spicy-flames" aria-hidden="true">
+      <i class="flame flame-a"></i><i class="flame flame-b"></i><i class="flame flame-c"></i>
+      <i class="flame flame-d"></i><i class="flame flame-e"></i>
+    </div>
+  </div>
+</main>
+
+<div class="modal" id="info-modal" hidden role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal-card">
+    <button class="modal-close" aria-label="إغلاق">×</button>
+    <div class="mini-logo">🌶️</div>
+    <h2 id="modal-title">كشري الباشا تلميذ</h2>
+    <p id="modal-text"></p>
+    <a class="gold-button" href="menu.html">شوف المنيو</a>
+    <p class="small-note">لإضافة رابط طلب الأوردر أو العروض الفعلي، اربط الزر برقم واتساب أو رابط المحل.</p>
+  </div>
+</div>
+
+<!-- Background invitation music; browsers may require one tap before sound can start. -->
+<audio id="site-music" src="invitation-song.mp3" autoplay loop preload="auto"></audio>
+<button id="music-toggle" class="music-toggle" type="button" aria-label="تشغيل الأغنية">♫ تشغيل الأغنية</button>
+<script src="site.js"></script>
+</body>
+</html>

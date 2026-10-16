@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07152c">
+<title>منيو كشري الباشا تلميذ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="menu-body">
+<header class="menu-topbar">
+  <a class="back-link" href="index.html">← رجوع للدعوة</a>
+  <div class="topbar-brand">Koshary <strong>El Basha Talmeez</strong></div>
+  <button class="zoom-button" id="zoom-menu">تكبير المنيو ⤢</button>
+</header>
+<main class="menu-main">
+  <div class="menu-art-wrap">
+    <div class="menu-spicy-flames" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+    <img id="menu-art" class="poster menu-poster" src="menu-two-page.jpg" alt="منيو كشري الباشا تلميذ صفحتين">
+    <p class="zoom-hint">اضغط على المنيو للتكبير، وقرّب بإصبعين على الموبايل لقراءة التفاصيل.</p>
+  </div>
+</main>
+
+<!-- Mascot inspired by the shop-opening gorilla costume reference -->
+<div class="opening-mascot" aria-label="تميمة افتتاح مرحة">
+  <div class="mascot-speech">يلا بينا!<br><b>افتح المنيو</b></div>
+  <div class="mascot-body">
+    <div class="mascot-head"><span class="ear ear-left"></span><span class="ear ear-right"></span><span class="brow"></span><span class="eyes">●　●</span><span class="muzzle"><i></i></span></div>
+    <div class="mascot-torso"></div>
+    <div class="mascot-arm arm-left"></div>
+    <div class="mascot-arm arm-right"><span class="wave-hand">✋</span></div>
+    <div class="mascot-leg leg-left"></div><div class="mascot-leg leg-right"></div>
+  </div>
+  <span class="mascot-spark spark-one">✦</span><span class="mascot-spark spark-two">✧</span>
+</div>
+
+<div class="lightbox" id="menu-lightbox" hidden role="dialog" aria-modal="true" aria-label="تكبير المنيو">
+  <button class="lightbox-close" id="close-lightbox" aria-label="إغلاق">×</button>
+  <img src="menu-two-page.jpg" alt="منيو كشري الباشا تلميذ مكبر">
+</div>
+
+<!-- Background invitation music; browsers may require one tap before sound can start. -->
+<audio id="site-music" src="invitation-song.mp3" autoplay loop preload="auto"></audio>
+<button id="music-toggle" class="music-toggle" type="button" aria-label="تشغيل الأغنية">♫ تشغيل الأغنية</button>
+<script src="site.js"></script>
+</body>
+</html>
